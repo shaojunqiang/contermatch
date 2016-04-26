@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 	/*******************显示图像1轮廓高斯平滑后的曲线*************************/
 	double nScaleStart=9;                    //与建立轮廓曲率描述符的起始数值相等
 	vector<double>  kappa_; vector<Point>  small_smooth_;
-	ComputeCurveCSS(a, kappa_, small_smooth_, nScaleStart, false);
+	ComputeCurveCSS(b, kappa_, small_smooth_, nScaleStart, false);
 	Mat bb_Curve(src.size(), CV_8UC3, Scalar(255, 255, 255));
 	drawOpenCurve(bb_Curve, small_smooth_, Scalar(0, 255, 0), 1);
 	namedWindow("平滑后的曲线", CV_WINDOW_AUTOSIZE);
