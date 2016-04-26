@@ -40,7 +40,7 @@ struct Keypoint
 	double val;//¼«Öµ
 };
 double CalcCrossCorrelation(const vector<double>& x, const vector<double>& y);
-vector<Keypoint>  GetKeypointDescriptor(vector<Point> & src, int N_neighbor, int nScale, int nBufferStep, int nScaleStart);
+vector<Keypoint>  GetKeypointDescriptor(vector<Point> & src, int N_neighbor, int nScale, int nBufferStep,double nScaleStart);
 
 vector<Keypoint> GetKeypointGlobaldescriptorDescriptor(vector<Point> & src);
 
