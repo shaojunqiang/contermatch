@@ -2,7 +2,7 @@
 
 #include"keypoint.h"
 
-vector<Keypoint>  GetKeypointDescriptor(vector<Point> & src, int N_neighbor, int nScale, int nBufferStep, int nScaleStart)
+vector<Keypoint>  GetKeypointDescriptor(vector<Point> & src, int N_neighbor, int nScale, int nBufferStep,double nScaleStart)
 {
 	bool done = false;
 	vector<Keypoint> std;
